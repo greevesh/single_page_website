@@ -7216,9 +7216,13 @@ a.bg-dark:focus, a.bg-dark:hover {
   .mr-md-5 {
     margin-right: 3rem !important;
   }
+  .mb-md-45 {
+    margin-bottom: 2.7rem !important;
+  }
   .mb-md-5 {
     margin-bottom: 3rem !important;
   }
+
   .ml-md-5 {
     margin-left: 3rem !important;
   }
@@ -7520,6 +7524,12 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
   .mb-lg-5 {
     margin-bottom: 3rem !important;
+  }
+  .mb-lg-7 {
+    margin-bottom: 4.2rem !important;
+  }
+  .mb-lg-9 {
+    margin-bottom: 5.4rem !important;
   }
   .ml-lg-5 {
     margin-left: 3rem !important;
@@ -7823,6 +7833,15 @@ a.bg-dark:focus, a.bg-dark:hover {
   .mb-xl-5 {
     margin-bottom: 3rem !important;
   }
+
+  .mb-xl-95 {
+    margin-bottom: 5.7rem !important;
+  }
+
+  .mb-xl-15 {
+    margin-bottom: 9rem !important;
+  }
+
   .ml-xl-5 {
     margin-left: 3rem !important;
   }
