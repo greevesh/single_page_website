@@ -3,9 +3,25 @@
     width: 100%;
 }
 
-.selling-point {
-    font-size: 1rem; 
-    width: 175%;
+@media (max-width: 400px) {
+    #phone {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 577px) {
+    .selling-point {
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 578px) {
+    .selling-point {
+        font-size: 1.3rem;
+        width: 600%;
+    }
 }
 
 @media (min-width: 768px) {
