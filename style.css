@@ -3,6 +3,28 @@
     width: 100%;
 }
 
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-paragraph {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 45%;
+    text-align: center;
+}
+
+#about {
+    border: 1px dotted dodgerblue;
+}
+
+@media (max-width: 750px) {
+    .about-paragraph {
+        width: 85%;
+    }
+}
+
 @media (max-width: 400px) {
     #phone {
         display: flex;
