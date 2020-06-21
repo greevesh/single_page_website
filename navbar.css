@@ -11,6 +11,11 @@
     margin: 1.3em 1em 0 1em;
 }
 
+.nav-list-item :hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
 @media (max-width: 750px) {
     .navbar-list {
         display: flex;
@@ -33,3 +38,76 @@
         font-size: 1.2rem;
     }
 }
+
+footer {
+    background-color: #7a6991;
+  }
+  
+  #footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  
+  #footer a {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  .footer-links {
+    padding-bottom: 40px;
+  }
+  
+  .footer-links a {
+    font-family: 'Poppins', sans-serif;
+    color: #c8cfd1;
+    font-size: 0.95rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .footer-links a:hover {
+    color: #c8cfd1;
+  }
+  
+  .copyright {
+    font-family: 'Poppins', sans-serif;
+    color: #bec4c5;
+    padding-top: 22px;
+    font-size: 0.85rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .nav li {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    #footer a {
+      padding-right: 5px;
+      padding-left: 5px;
+      line-height: 22px;
+    }
+    #footer {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  
+  @media only screen 
+  and (min-width: 600px) 
+  and (max-width: 1024px) {
+  
+    #footer a {
+      padding-right: 25px;
+      padding-left: 25px;
+      line-height: 30px;
+    }
+  
+    #footer {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }

@@ -19,6 +19,11 @@
     text-align: center;
 }
 
+.card ul {
+    line-height: 1.4em;
+    color: rgb(107, 104, 104);
+}
+
 .testimonials p {
     font-size: 1.2rem;
 }
