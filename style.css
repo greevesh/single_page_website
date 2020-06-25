@@ -1,22 +1,68 @@
-* {
-    font-family: 'Poppins', sans-serif;
+.brand-name {
+    font-family: 'Courgette', cursive;
 }
 
-#banner {
+.banner {
     height: 32rem;
     width: 100%;
     opacity: 0.9;
 }
 
-.about-container {
+.about-therapy {
     display: flex;
     justify-content: center;
 }
 
-.about-paragraph {
+.about-therapy p {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     width: 45%;
     text-align: center;
+}
+
+.about-therapy a {
+    font-size: 1.2rem;
+    color: #7a6991;
+}
+
+.about-therapy :hover {
+    color: #7a6991;
+}
+
+.why-choose-me i {
+    color: #7a6991;
+}
+
+.free-call-strip {
+    background-color: #7a6991;
+    height: 40%;
+}
+
+.free-call-strip h1 {
+    color: white;
+    padding-top: 4rem;
+}
+
+.free-call-strip span {
+    border-bottom: 2px solid white;
+}
+
+.free-call-strip p {
+    margin-top: 2rem;
+}
+
+.free-call-strip a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+    border: 2px solid white;
+}
+
+.free-call-strip a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #7400B3;
 }
 
 .card ul {
@@ -24,12 +70,52 @@
     color: rgb(107, 104, 104);
 }
 
-.testimonials p {
+.testimonial-container {
+    position: relative;
+}
+
+.testimonial-container::after {
+    content : "";
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('https://images.pexels.com/photos/3958396/pexels-photo-3958396.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+}
+
+.testimonial-title {
+    color: black;
+    padding-top: 2rem;
+}
+
+.testimonial-paragraph {
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    font-size: 1.1rem;
+    color: #221f25;
+    margin-top: 2rem;
+    opacity: 1;
+}
+
+.reviewer {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
+    color: #36313a;
+}
+
+@media (max-width: 280px) {
+    .brand-name {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 500px) {
-    #banner {
+    .banner {
         height: 16rem;
     }
 }
@@ -40,8 +126,15 @@
     }
 }
 
+@media (max-width: 350px) {
+    .testimonial-container::after {
+        background-image: url('https://images.pexels.com/photos/3958396/pexels-photo-3958396.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-size: cover;
+    }
+}
+
 @media (max-width: 750px) {
-    .about-paragraph {
+    .about-therapy p {
         width: 85%;
     }
 }
@@ -50,40 +143,5 @@
     #phone {
         display: flex;
         justify-content: center;
-    }
-}
-
-@media (max-width: 577px) {
-    .selling-point {
-        font-size: 1rem;
-        width: 100%;
-    }
-}
-
-@media (min-width: 578px) {
-    .selling-point {
-        font-size: 1.3rem;
-        width: 600%;
-    }
-}
-
-@media (min-width: 768px) {
-    .selling-point {
-        font-size: 0.85rem;
-        width: 160%;
-    }
-}
-
-@media (min-width: 992px) {
-    .selling-point {
-        font-size: 1.1rem;
-        width: 166%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .selling-point {
-        font-size: 1.4rem;
-        width: 178%;
     }
 }
