@@ -7,7 +7,7 @@
     background-color: #5ca720;
     width: 12rem;
     text-align: center; 
-    box-shadow: 0.5px 0.8px #51921b;
+    box-shadow: 2px 3.5px #cbcecb;
 }
 
 .book-call-btn:hover {
@@ -93,9 +93,18 @@
     background-color: #7400B3;
 }
 
+.card {
+    margin: 2rem;
+    box-shadow: 2px 4px #cbcecb;
+}
+
 .card ul {
     line-height: 1.4em;
     color: rgb(107, 104, 104);
+}
+
+.card h3 {
+    margin-bottom: 1.5rem;
 }
 
 .testimonial-container {

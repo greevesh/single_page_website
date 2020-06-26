@@ -56,6 +56,11 @@ footer {
     padding-right: 30px;
     padding-left: 30px;
   }
+
+  #footer a:hover {
+    text-decoration: none;
+    opacity: 0.6;
+  }
   
   .footer-links {
     padding-bottom: 40px;
@@ -71,6 +76,8 @@ footer {
 
   .footer-links a:hover {
     color: #c8cfd1;
+    text-decoration: none;
+    opacity: 0.6;
   }
   
   .copyright {
