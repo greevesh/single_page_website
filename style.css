@@ -1,3 +1,31 @@
+.book-call-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    border: 0.2rem solid #5ca720;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #5ca720;
+    width: 12rem;
+    text-align: center; 
+    box-shadow: 0.5px 0.8px #51921b;
+}
+
+.book-call-btn:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.no-credit-card-container {
+    margin: -0.8rem 2.3rem 0 0;
+}
+
+.no-credit-card-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(148, 138, 138);
+}
+
 .brand-name {
     font-family: 'Courgette', cursive;
 }
@@ -120,6 +148,18 @@
     }
 }
 
+@media (max-width: 500px) {
+    .free-call-strip a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .free-call-strip a {
+        font-size: 0.75rem;
+    }
+}
+
 @media (max-width: 320px) {
     .testimonials h1 {
         font-size: 2rem;
@@ -139,9 +179,14 @@
     }
 }
 
-@media (max-width: 400px) {
-    #phone {
+@media (max-width: 600px) {
+    .book-call-btn {
         display: flex;
         justify-content: center;
+    }
+    .no-credit-card-container {
+        display: flex;
+        justify-content: center;
+        margin-left: 2.5rem;
     }
 }
