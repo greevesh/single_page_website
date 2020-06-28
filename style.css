@@ -157,6 +157,12 @@
     }
 }
 
+@media (max-width: 280px) {
+    .free-call-strip {
+        height: 17rem;
+    }
+}
+
 @media (max-width: 500px) {
     .free-call-strip a {
         font-size: 1rem;
@@ -166,6 +172,12 @@
 @media (max-width: 350px) {
     .free-call-strip a {
         font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 280px) {
+    #experienced {
+        font-size: 1.5rem;
     }
 }
 
