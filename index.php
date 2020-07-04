@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="description" content="An example website for an online therapist">
+  <meta name="author" content="Harrison Greeves">
   <meta name="generator" content="Jekyll v3.8.6">
   
   <title>Sarah's Online Therapy</title>
 
-  <!-- Non-contact form CSS Stylesheets -->
+  <!-- Non-contact form CSS stylesheets -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="navbar.css">
 
@@ -166,56 +166,13 @@
       <p class="reviewer">- DAVE  (FROM NEWCASTLE)</p>
     </div>
 
-  </div><!--End of row of testimonials-->
+  </div>
+  <!--End of row of testimonials-->
 </div>
-
-<!-- Email and validation logic for the contact form -->
-<?php
-  if ($_POST["submit"]) {
-    
-      if (!$_POST['name']) {
-        $error="<br />Please enter your name";
-      }
-      if (!$_POST['email']) {
-        $error.="<br />Please enter your email address";
-      }
-
-      if (!$_POST['message']) {
-        $error.="<br />Please enter a message";
-      }
-        
-      if ($_POST['email']!="" AND !filter_var($_POST['email'],
-
-      FILTER_VALIDATE_EMAIL)) {  
-
-        $error.="<br />Please enter a valid email address";
-
-      } 
-
-      if ($error) {
-        $result='<div class="alert alert-danger"><strong>There were error(s) in your form:</strong>'.$error.'</div>';
-      } 
-      else {
-
-      if (mail("hgreeves@protonmail.com", "Message from Your Website Name", 
-
-      "Name: ".$_POST['name']."
-        Email: ".$_POST['email']."
-        Message: ".$_POST['message'])) {
-
-      $result='<div class="alert alert-success"> <strong> Thank you!</strong> I\'ll get back to you shortly.</div>';
-
-      } 
-      else {
-          $result='<div class="alert alert-danger">Sorry, there was an error sending your message. Please try again later.</div>';
-      }
-    }
-  }
-?>
 
 <div class="container-contact3 mt-5">
   <div class="wrap-contact3">
-    <form id="contact" class="contact3-form validate-form" method="POST">
+    <form id="contact" class="contact3-form" method="POST">
       <span class="contact3-form-title">
         TALK TO ME
       </span>
@@ -242,14 +199,32 @@
       </div>
       <!-- End of radio buttons -->
 
-      <div class="wrap-input3 validate-input" data-validate="Name is required">
-        <input class="input3" type="text" name="name" placeholder="Your Name" value="">
+      <div class="wrap-input3">
+        <input class="input3" type="text" name="name" placeholder="Your Name" value="<?php echo $_POST['name']; ?>">
         <span class="focus-input3"></span>
+        <?php
+          $name = htmlspecialchars($_POST['name']);
+          if (isset($_POST['submit']) && empty($name)) {
+            $warning = "<span style='color: red'>Please enter your name</span>";
+            echo $warning;
+          }
+        ?>
       </div>
 
-      <div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-        <input class="input3" type="text" name="email" placeholder="Your Email" value="">
+      <div class="wrap-input3">
+        <input class="input3" type="text" name="email" placeholder="Your Email" value="<?php echo $_POST['email']; ?>">
         <span class="focus-input3"></span>
+        <?php
+          $email = htmlspecialchars($_POST['email']);
+          if (isset($_POST['submit']) && empty($email)) {
+            $warning = "<span style='color: red'>Please enter your email</span>";
+            echo $warning;
+          }
+          elseif (isset($_POST['submit']) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $warning = "<span style='color: red;'>Please enter a valid email</span>";
+            echo $warning;
+          }
+        ?>
       </div>
 
       <div class="wrap-input3 input3-select">
@@ -263,13 +238,49 @@
         <span class="focus-input3"></span>
       </div>
 
-      <div class="wrap-input3 validate-input" data-validate = "Message is required">
+      <div class="wrap-input3">
         <textarea class="input3" name="message" placeholder="Your Message" value="<?php echo $_POST['message']; ?>"></textarea>
         <span class="focus-input3"></span>
+        <?php
+          $message = htmlspecialchars($_POST['message']);
+          if (isset($_POST['submit']) && empty($message)) {
+            $warning = "<span style='color: red'>Please enter a message</span>";
+            echo $warning;
+          }
+        ?>
       </div>
 
+      <?php 
+        if (isset($_POST['submit']) && !$warning) {
+          $to = 'hgreeves96@gmail.com';
+          $subject = 'Message request from: ' . $name;
+          $body = 'Message Request' . '<br><br>' .
+                  'Name: '  . $name . '<br><br>' .
+                  'Email: ' . $email . '<br><br>' .
+                  'Message: ' . $message;
+
+          // Includes the chosen service in the email
+          if ($_POST['service'] !== 'Service') {
+            $body .= '<br><br>' . $_POST['service'];
+          }
+
+          $headers  = 'MIME-Version: 1.0' . "\r\n";
+          $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+
+          // Optional headers
+          $headers .= 'To: Harri <hgreeves@protonmail.com>';
+          $headers .= 'From: Message Request <$email>';
+
+          if (!mail($to, $subject, $body, $headers)) {
+            echo "<div class='alert alert-danger'>Sorry. Something went wrong :(</div>";
+          }
+          else
+            echo '<div class="alert alert-success">Message sent. I will get back to you within two working days :)</div>';
+        }   
+      ?>
+
       <div class="container-contact3-form-btn">
-        <button class="contact3-form-btn" type="submit">
+        <button class="contact3-form-btn" type="submit" name="submit">
           Send
         </button>
       </div>
