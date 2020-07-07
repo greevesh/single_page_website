@@ -51,7 +51,7 @@
   </div>
 </nav>
 
-<img src="https://images.pexels.com/photos/4099096/pexels-photo-4099096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="banner d-flex justify-content-center">
+<img src="https://images.pexels.com/photos/4099096/pexels-photo-4099096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="banner d-flex justify-content-center" alt="An online therapy client">
 
 <br><br>
 
@@ -59,7 +59,7 @@
   <h1 class="mb-1" align="center">Why Online Therapy?</h1>
 
   <div class="d-flex justify-content-center">
-    <img src="img/curious.png" alt="">
+    <img src="img/curious.png" alt="Question mark head">
   </div>
 
   <div class="about-therapy">
@@ -102,7 +102,7 @@
     <div class="row d-flex justify-content-center">
       <div class="card col-xl-3 col-md-3">
         <div class="text-center">
-          <div><img src="img/certificate.png" alt=""></div>
+          <div><img src="img/certificate.png" alt="Certificate icon"></div>
           <h3>Certified</h3>
           <ul>
             <li>Masters degree in Occupational Therapy</li>
@@ -114,7 +114,7 @@
       
       <div class="card col-xl-3 col-md-3">
         <div class="text-center">
-          <div><img src="img/experienced.png" alt=""></div>
+          <div><img src="img/experienced.png" alt="Experienced icon"></div>
           <h3 id="experienced">Experienced</h3>
           <ul>
             <li>10+ years of experience helping people overcome life's biggest challenges</li>
@@ -126,7 +126,7 @@
 
       <div class="card col-xl-3 col-md-3">
         <div class="text-center">
-          <div><img src="img/respectful.png" alt=""></div>
+          <div><img src="img/respectful.png" alt="Respectful icon"></div>
           <h3>Respectful</h3>
           <ul>
             <li>All information from our talks is <i>forever</i> 100% confidential</li>
