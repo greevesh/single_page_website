@@ -145,14 +145,15 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: rgba(255,255,255,0.8);
-  margin-bottom: 4rem;
+  background-image: url('https://images.pexels.com/photos/588561/pexels-photo-588561.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.container-contact3 h4 {
+  color: white;
 }
 
 .wrap-contact3 {
   width: 700px;
-  background-color: rgb(209, 201, 201);
-  box-shadow: 3px 6px 3px 6px #cbcecb;
   border-radius: 10px;
   overflow: hidden;
   padding: 72px 55px 65px 55px;
@@ -169,7 +170,7 @@ iframe {
 .contact3-form-title {
   display: block;
   font-family: 'Poppins', sans-serif;
-  color: black;
+  color: white;
   font-size: 40px;
   line-height: 1.2;
   text-align: center;
@@ -190,7 +191,7 @@ iframe {
 }
 
 .wrap-input3 ::placeholder {
-  color: black;
+  color: white;
 }
 
 .input3 {
@@ -199,7 +200,7 @@ iframe {
   background: transparent;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  color: black;
+  color: white;
   line-height: 1.2;
   padding: 0 5px;
 }
@@ -226,7 +227,7 @@ iframe {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  background: black;
+  background: white;
 }
 
 
@@ -258,7 +259,9 @@ textarea.input3 {
 }
 
 .contact3-form-btn {
-  font-size: 16px;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
   font-family: 'Poppins', sans-serif;
   color: white;
   line-height: 1.2;
@@ -293,7 +296,6 @@ textarea.input3 {
   top: 0;
   left: 0;
   background-color: #5ca720;
-  box-shadow: 2px 3.5px #acadac;
   opacity: 1;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -301,14 +303,28 @@ textarea.input3 {
   transition: all 0.4s;
 }
 
+.contact3-form-btn::after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 10px;
+  right: -5px;
+  transition: 0.5s;
+}
+
+.contact3-form-btn:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.contact3-form-btn:hover::after {
+  opacity: 1;
+  right: 10px;
+}
+
 .contact3-form-btn:hover {
   color: white;
   background-color: #5ca720;
-  opacity: 0.8;
-}
-
-.contact3-form-btn:hover:before {
-  opacity: 0;
 }
 
 /*------------------------------------------------------------------
@@ -410,7 +426,7 @@ textarea.input3 {
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  color: black;
+  color: white;
   line-height: 1.2;
 }
 
@@ -495,7 +511,7 @@ textarea.input3 {
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  color: black;
+  color: white;
   line-height: 1.2;
   padding-left: 5px ;
   background-color: transparent;
