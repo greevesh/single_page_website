@@ -8,14 +8,24 @@
     object-fit: cover;
 }
 
+.about-therapy h1 {
+    text-align: left;
+}
+
 .about-therapy p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
+    text-align: left;
 }
 
 .about-therapy a {
     font-size: 1.5rem;
     color: #691cce;
+}
+
+.about-therapy-img {
+    width: 100%;
+    height: 100%;
 }
 
 .why-therapy {
@@ -133,6 +143,37 @@
     }
 }
 
+@media (max-width: 991px) {
+    .about-therapy h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .about-therapy p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-therapy p {
+        text-align: center;
+        width: 95%;
+    }
+}
+
+@media (max-width: 350px) {
+    .about-therapy p a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-therapy-img {
+        display: none;
+    }
+}
+
 @media (max-width: 280px) {
     .free-call-strip {
         height: 17rem;
@@ -151,12 +192,6 @@
     }
 }
 
-@media (max-width: 280px) {
-    #experienced {
-        font-size: 1.5rem;
-    }
-}
-
 @media (max-width: 320px) {
     .testimonials h1 {
         font-size: 2rem;
@@ -167,12 +202,6 @@
     .testimonial-container::after {
         background-image: url('https://images.pexels.com/photos/3958396/pexels-photo-3958396.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
         background-size: cover;
-    }
-}
-
-@media (max-width: 750px) {
-    .about-therapy p {
-        width: 85%;
     }
 }
 

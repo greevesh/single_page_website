@@ -53,17 +53,17 @@
 
 <body>
 
-  <div class="container">
+  <div style="width: 100vw;" class="container">
     <div class="row">
-      <div class="col-md-6 about-therapy" data-aos="fade-right" data-aos-duration="1000">
-        <h1 class="mb-1 d-flex justify-content-start about-therapy-title" align="center">Why Online Therapy?</h1>
+      <div class="col-lg-6 about-therapy" data-aos="fade-right" data-aos-duration="1000">
+        <h1 class="mb-1" align="center">Why Online Therapy?</h1>
         <p class="mt-4">Online therapy is a trend that continues to grow. Especially, during these troubling times.</p>
         <p>Save yourself time, stress, and money commuting to and from face-to-face therapy and reap the same benefits from the comfort of your own home!</p>
         <p>Learn more about online therapy and it's benefits <a href="https://www.thrivetalk.com/online-therapy/">here</a>.</p>
       </div>
 
-      <div class="col-md-6">
-        <img src="https://www.salesstar.com/hubfs/Campaign_Assets/Campaign_09/Blog%20images/C8-blog-10-Tips-on-how-to-ask-the-hard-questions.jpg" class="why-therapy" alt="A man with glasses thinking" data-aos="fade-left" data-aos-duration="1000">
+      <div class="col-lg-6">
+        <img class="about-therapy-img" src="https://www.salesstar.com/hubfs/Campaign_Assets/Campaign_09/Blog%20images/C8-blog-10-Tips-on-how-to-ask-the-hard-questions.jpg" alt="A man with glasses thinking" data-aos="fade-left" data-aos-duration="1000">
       </div>
     </div>
   </div>
