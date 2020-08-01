@@ -82,7 +82,7 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
           <div>
             <h1>Why Choose Me? 🤔</h1>
             <br>
@@ -90,7 +90,7 @@
           </div>
         </div>
 
-        <div class="about-me col-6" data-aos="fade-left" data-aos-duration="1000">
+        <div class="about-me col-lg-6" data-aos="fade-left" data-aos-duration="1000">
           <h1>Because...</h1>
           <p class="mt-4">I am a licensed and registered therapist that has been helping people overcome anxiety disorders for the past 10 years.</p>
           <p>Two years ago I decided to take my services online so that I was able to help a much wider range of people. I haven't looked back since!</p>

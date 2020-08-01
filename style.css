@@ -44,7 +44,7 @@
 
 .free-call-strip h1 {
     color: white;
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 .free-call-strip span {
@@ -69,8 +69,6 @@
 .free-call-strip a:hover {
     color: white;
     text-decoration: none;
-    animation: free-call 2s;
-    font-size: 2.2rem;
 }
 
 @keyframes free-call {
@@ -89,7 +87,8 @@
 
 .about-me p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    padding-top: 5%;
 }
 
 .testimonial-container {
@@ -149,16 +148,16 @@
     }
 }
 
-@media (max-width: 350px) {
-    .about-therapy p {
-        font-size: 1.2rem;
-    }
-}
-
 @media (max-width: 991px) {
     .about-therapy p {
         text-align: center;
         width: 95%;
+    }
+}
+
+@media (max-width: 350px) {
+    .about-therapy p {
+        font-size: 1.2rem;
     }
 }
 
@@ -174,21 +173,97 @@
     }
 }
 
+@media (max-height: 600px) {
+    .free-call-strip h1 {
+        padding-top: 1.5rem;
+    }
+}
+
 @media (max-width: 280px) {
     .free-call-strip {
         height: 17rem;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .free-call-strip a {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     .free-call-strip a {
         font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .free-call-strip a:hover {
+        color: white;
+        text-decoration: none;
+        animation: free-call 2s;
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .why-choose-me h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .about-therapy p {
+        text-align: center;
+        width: 95%;
+        font-size: 1.7rem;
+    }
+    .about-me h1 {
+        padding-top: 1.5rem;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .about-me p {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-therapy p {
+        font-size: 1.5rem;
+    }
+    .why-choose-me h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .why-choose-me p {
+        font-size: 2rem;
+    }
+    .about-me h1 {
+        padding-top: 1.8rem;
+        font-size: 2.5rem;
+    }
+    .about-me p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-therapy p {
+        font-size: 1.2rem;
+    }
+    .why-choose-me h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .about-me h1 {
+        padding-top: 1.5rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .about-me p {
+        text-align: center;
+        font-size: 1.2rem;
     }
 }
 
