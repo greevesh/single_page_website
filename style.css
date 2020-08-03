@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .brand-name {
     font-family: 'Courgette', cursive;
 }
