@@ -10,8 +10,8 @@
   <title>Sarah's Online Therapy</title>
 
   <!-- Non-contact form CSS stylesheets -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
@@ -42,7 +42,7 @@
   <div class="navbar-header">
     <ul class="navbar-list">
       <li class="nav-list-item"><a class="nav-link" href="#contact">TALK TO ME</a></li>
-      <li class="nav-list-item"><a class="nav-link" href="">BLOG</a></li>
+      <li class="nav-list-item"><a class="nav-link" href="blog.html">BLOG</a></li>
     </ul>
   </div>
 </nav>
